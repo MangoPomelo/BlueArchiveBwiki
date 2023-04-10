@@ -6,18 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
     body {
       width: 100vw;
-      height: 100vw;
+      height: 100vh;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      background-color: #1b1b1b;
+    }
+
+    img.page__background {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      object-fit: cover;
+      object-position: center;
+      z-index: -1;
+    }
+
+    h1.page__title {
+      text-align: center;
+      color: #336CA5;
+      -webkit-text-stroke: 1px #FFFFFF;
     }
   </style>
 </head>
 <body>
-  <include src="logo/index.html"/>
-  <include src="title/index.html"/>
+  <img  class="page__background" src="background-image.jpg" alt="background image"/>
+  <img  class="page__background" src="background-cover.png" alt="background cover"/>
+
+  <include src="./logo/index.html"/>
+
+  <h1 class="page__title">欢迎各位老师~!</h1>
 </body>
 </html>

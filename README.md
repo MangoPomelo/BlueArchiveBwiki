@@ -15,3 +15,6 @@ This project serves for blue archive bilibili wiki, which separates each part of
 ## Rules
 1. recommend to use BEM for CSS naming convention
 1. while committing a feature, follow the [🔗semantic commit message rule](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+
+## Notice
+Notice that `url` in css is not supported due to webpack configuration, use absolute positioning image for background instead
